@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="text" id="A"> 
+    <input type="text" id="B">
+
+    <input type="button" value="Dodawanie" id="dod" onclick="Dodawanie()">
+    <input type="button" value="Odejmowanie" id="ode" onclick="Odejmowanie()">
+    <input type="button" value="Mnożenie" id="mno" onclick="Mnozenie()">
+    <input type="button" value="Dzielenie" id="dziel" onclick="Dzielenie()">
+
+    <script>
+        
+        let a =document.getElementById("A").value;
+        let b =document.getElementById("B").value;
+
+        function Dodawanie(){
+            let a =Number(document.getElementById("A").value);
+        let b =Number(document.getElementById("B").value);
+            document.write(a+b);
+        }
+        function Odejmowanie(){
+            let a =Number(document.getElementById("A").value);
+        let b =Number(document.getElementById("B").value);
+            document.write(a-b);
+        }
+        function Mnozenie(){
+            let a =Number(document.getElementById("A").value);
+        let b =Number(document.getElementById("B").value);
+            document.write(a*b);
+        }
+        function Dzielenie(){
+            let a =Number(document.getElementById("A").value);
+        let b =Number(document.getElementById("B").value);
+            document.write(a/b);
+        }
+
+    </script>
+
+</body>
+</html>
